@@ -67,4 +67,5 @@ Xojo2Markdown will render project items based on their type. Folders and Modules
 Tables for object members are statically rendered.
 ### Framework API Version
 | 1.0 | 2.0 |
+| --- | --- |
 | False | True |
