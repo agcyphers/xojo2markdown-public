@@ -112,3 +112,6 @@ Tables for object members are statically sorted and rendered.
 | --- | --- | --- | --- |
 | BackgroundColor | Color | &cff00ff | Color drawn to the background of the control. |
 
+## Rendering Caveats
+- HTML contained within notes will be automatically converted to markdown. If you wish to display HTML content in your notes, consider encoding tags to HTML entities.
+- Markdown contained within notes will be unaltered, and may not match the overall document structure and require modification.
