@@ -95,7 +95,7 @@ Tables for object members are statically sorted and rendered.
 ### Delegates
 | Name | Parameters | Return Type | Description |
 | --- | --- | --- | --- |
-| SomeDelegate | One As String <br> Two as Double <br> Three as Boolean | Boolean | A delegate method. |
+| SomeDelegate | One As String <br> Two As Double <br> Three As Boolean | Boolean | A delegate method. |
 
 ### Event Definitions
 | Name | Parameters | Return Type | Description |
@@ -105,7 +105,7 @@ Tables for object members are statically sorted and rendered.
 ### Methods / Shared Methods
 | Name | Parameters | Return Type | Description |
 | --- | --- | --- | --- |
-| HasChild | extends arr() as String <br> searchFor as String | Boolean | Returns True when searchFor exists within arr. |
+| HasChild | extends arr() As String <br> searchFor As String | Boolean | Returns True when searchFor exists within arr. |
 
 ### Properties / Shared Properties
 | Name | Type | Default Value | Description |
