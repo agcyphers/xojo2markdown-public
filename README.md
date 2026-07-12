@@ -19,7 +19,7 @@ The first argument should always be the path to the `xojo_project` you wish to r
 Xojo2Markdown uses an explicit inclusion model. All project items are excluded by default, and only those project items specified by an `--in` flag are included. Project items and members with the `Hidden`, `Deprecated` and `DeprecatedWithReplacement` attributes are *always* ignored.
 
 ## Include/Exclude Flag Use
-- All paths supplied to `--in` and `--ex` should be relative to the project's root directory as seen in the Xojo IDE navigator.
+- All paths supplied to `--in` and `--ex` should be relative to the project's root as seen in the Xojo IDE navigator.
 - Both flags support wildcards (`*`) as the final path element, allowing the inclusion or exclusion of all project items within, for example, a single folder or module.
 
 ## Notes Rendering
