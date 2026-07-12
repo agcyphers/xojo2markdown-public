@@ -62,3 +62,9 @@ Xojo2Markdown will render project items based on their type. Folders and Modules
 1. `!Notes` section
 1. `!Examples` section
 1. All other rendered notes (IE: `!Changelog`)
+
+## Table Formats
+Tables for object members are statically rendered.
+### Framework API Version
+| 1.0 | 2.0 |
+| False | True |
