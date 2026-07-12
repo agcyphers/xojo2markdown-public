@@ -21,6 +21,7 @@ Xojo2Markdown uses an explicit inclusion model. All project items are excluded b
 ## Include/Exclude Flag Use
 - All paths supplied to `--in` and `--ex` should be relative to the project's root as seen in the Xojo IDE navigator.
 - Both flags support wildcards (`*`) as the final path element, allowing the inclusion or exclusion of all project items within, for example, a single folder or module.
+- Multiple paths should be separated by a semicolon (`;`).
 
 ## Notes Rendering
 ### Creation
