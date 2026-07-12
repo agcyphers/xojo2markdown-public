@@ -43,8 +43,8 @@ Xojo2Markdown will render project items based on their type. Folders and Modules
 3. `!License` note
 4. Members
 5. Compatibility
-     1, Framework API Version support
-     2. Platform support
+    1, Framework API Version support
+    2. Platform support
         1. Android
         2. Console
         3. Desktop
