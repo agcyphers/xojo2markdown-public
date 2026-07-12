@@ -16,7 +16,7 @@ The first argument should always be the path to the `xojo_project` you wish to r
 | `--ex` | Project path to a Xojo project item(s). | Explicitly excludes project items in output. Multiple values should be separated by a semicolon (`;`) |  `--ex=Classes/Windows/testWindows/*;Classes/ProjectWriter/ExportThread` |
 
 ## Inclusion Model
-Xojo2Markdown uses an explicit inclusion model. All project items are excluded by default, and only those project items specified by an `--in` flag are included. Project items are members with the `Hidden`, `Deprecated` and `DeprecatedWithReplacement` attributes are *always* ignored.
+Xojo2Markdown uses an explicit inclusion model. All project items are excluded by default, and only those project items specified by an `--in` flag are included. Project items and members with the `Hidden`, `Deprecated` and `DeprecatedWithReplacement` attributes are *always* ignored.
 
 ## Include/Exclude Flag Use
 - All paths supplied to `--in` and `--ex` should be relative to the project's root directory as seen in the Xojo IDE navigator.
