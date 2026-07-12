@@ -10,7 +10,7 @@ The first argument should always be the path to the `xojo_project` you wish to r
 | --- | --- | --- | --- |
 | `--out` | Folder Path | The path to save the rendered file structure to. | `--out=-out="/Volumes/External/projects/myproject/docs"` |
 | `--verbose` | Boolean | Controls output messages granularity. The application will only print error messages unless this option is enabled. | `--verbose` |
-| `--overwrite` | Boolean | Signals that, should a previous version exist, it should be overwritten but not replaces. | `--overwrite` |
+| `--overwrite` | Boolean | Signals that, should a previous version exist, it should be overwritten but not replaced. | `--overwrite` |
 | `--replace` | Boolean | During the rendering process, if the output path exists, it will be removed and the new structure will be built in its place. | `--replace` |
 | `--in` | Project path to the Xojo project item(s). | Explicitly includes project items in output. | `--in=Classes/Windows/*;Classes/ProjectReader/ImportThread` |
 | `--ex` | Project path to a Xojo project item(s). | Explicitly excludes project items from output. |  `--ex=Classes/Windows/testWindows/*;Classes/ProjectWriter/ExportThread` |
