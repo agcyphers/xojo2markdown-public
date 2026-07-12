@@ -13,7 +13,7 @@ The first argument should always be the path to the `xojo_project` you wish to r
 | `--overwrite` | Boolean | Signals that, should a previous version exist, it should be overwritten but not replaces. | `--overwrite` |
 | `--replace` | Boolean | During the rendering process, if the output path exists, it will be removed and the new structure will be built in its place. | `--replace` |
 | `--in` | Project path to the Xojo project item. | Explicitly includes project items in output. Multiple values should be separated by a semicolon (`;`) | `--in=Classes/Windows/*;Classes/ProjectReader/ImportThread` |
-| `--out` | Project path to a Xojo project item. | Explicitly excludes project items in output. Multiple values should be separated by a semicolon (`;`) |  `--ex=Classes/Windows/testWindows/*;Classes/ProjectWriter/ExportThread` |
+| `--ex` | Project path to a Xojo project item. | Explicitly excludes project items in output. Multiple values should be separated by a semicolon (`;`) |  `--ex=Classes/Windows/testWindows/*;Classes/ProjectWriter/ExportThread` |
 
 ## Inclusion Model
 Xojo2Markdown uses an explicit inclusion model. All project items are excluded by default, and only those project items specified by an `--in` flag are included. Project items are members with the `Hidden`, `Deprecated` and `DeprecatedWithReplacement` attributes are *always* ignored.
