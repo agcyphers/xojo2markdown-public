@@ -1,7 +1,7 @@
 # Xojo2Markdown
 
 ## Description
-Xojo2Markdown is a console application that can read your `xojo_project` files and convert them to markdown files with matching file structure. Supports exlcuding objects with the `Hidden` and `Deprecated`/`DesprectedWithReplacement` attributes, as well as output of Description fields and user-provided Notes.
+Xojo2Markdown is a console application that can read your `xojo_project` files and convert them to markdown files with matching file structure. Automatically excludes objects with the `Hidden` and `Deprecated`/`DesprectedWithReplacement` attributes, as well as output of Description fields and user-provided Notes.
 
 ## Runtime Arguments
 The first argument should always be the path to the `xojo_project` you wish to render. Native paths should be quoted.
