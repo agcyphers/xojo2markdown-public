@@ -39,26 +39,26 @@ This example will create an `Examples` section header, followed by the content o
 ## Rendered Sections and Order
 Xojo2Markdown will render project items based on their type. Folders and Modules will have a `Members` section with an index of their contained items. All other sections are rendered in the following order:
 1. `!About` note
-2. `!Warnings` note
-3. `!License` note
-4. Members
-5. Compatibility
-   1, Framework API Version support
-   2. Platform support
+1. `!Warnings` note
+1. `!License` note
+1. Members
+1. Compatibility
+   1. Framework API Version support
+   1. Platform support
       1. Android
-      2. Console
-      3. Desktop
-      4. iOS
-      5. Web
-6. Attributes
-7. Enumerations
-8. Constants
-9. Delegates
-10. Event Definitions
-11. Methods
-12. Shared Methods
-13. Properties (regular or computed)
-14. Shared Properties (regular or computed)
-15. `!Notes` section
-16. `!Examples` section
-17. All other rendered notes (IE: `!Changelog`)
+      1. Console
+      1. Desktop
+      1. iOS
+      1. Web
+1. Attributes
+1. Enumerations
+1. Constants
+1. Delegates
+1. Event Definitions
+1. Methods
+1. Shared Methods
+1. Properties (regular or computed)
+1. Shared Properties (regular or computed)
+1. `!Notes` section
+1. `!Examples` section
+1. All other rendered notes (IE: `!Changelog`)
