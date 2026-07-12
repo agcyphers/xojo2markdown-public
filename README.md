@@ -65,7 +65,49 @@ Xojo2Markdown will render project items based on their type. Folders and Modules
 
 ## Table Formats
 Tables for object members are statically rendered.
+
 ### Framework API Version
 | 1.0 | 2.0 |
 | --- | --- |
 | False | True |
+
+### Platforms
+| 32-Bit | 64-Bit |
+| --- | --- |
+| False | True |
+
+### Attributes
+| Name | Value |
+| --- | --- |
+| DefaultEvent | Pressed |
+
+### Enumerations
+| Name | Values | Description |
+| --- | --- | --- |
+| SomeEnum | One <br> Two <br> Three | Enum values for something. |
+
+### Constants
+| Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| kPi | Number | 3.14 | Pi value for calculations. |
+
+### Delegates
+| Name | Parameters | Return Type | Description |
+| --- | --- | --- | --- |
+| SomeDelegate | One As String <br> Two as Double <br> Three as Boolean | Boolean | A delegate method. |
+
+### Event Definitions
+| Name | Parameters | Return Type | Description |
+| --- | --- | --- | --- |
+| Pressed | X As Integer <br> Y As Integer | (None) | Raised when the user presses the left mouse button. |
+
+### Methods / Shared Methods
+| Name | Parameters | Return Type | Description |
+| --- | --- | --- | --- |
+| HasChild | extends arr() as String <br> searchFor as String | Boolean | Returns True when searchFor exists within arr. |
+
+### Properties / Shared Properties
+| Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| BackgroundColor | Color | &cff00ff | Color drawn to the background of the control. |
+
