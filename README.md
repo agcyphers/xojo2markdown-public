@@ -24,7 +24,7 @@ Xojo2Markdown uses an explicit inclusion model. All project items are excluded b
 
 ## Notes Rendering
 ### Creation
-Xojo project item Notes are rendered to that item's project based on the existence of an exclamation point at the start of the note name. For example:
+Xojo project item Notes are rendered to that item's `md` files based on the existence of an exclamation point at the start of the note name. For example:
 - `!About` will be rendered
 - `About` will not be rendered
 
@@ -34,10 +34,10 @@ Notes may be grouped into a structure for rendering logically associated notes. 
 - `!Examples\Instantiating`
 - `!Examples\Adding an Item`
 
-This example will create an `Examples` section header, followed by the content of `!Examples` note, then sub-headings for `Instantiation` and `Adding an Item`, each followed by their Xojo note contennt.
+This example will create an `Examples` section header, followed by the content of the `!Examples` note, then sub-headings for `Instantiation` and `Adding an Item`, each followed by their Xojo note content.
 
 ## Rendered Sections and Order
-Xojo2Markdown will render project items based on their type. Folders and Modules will have a `Members` section with an index of their contained items. All other sections are rendered in the following order:
+Project items are rendered based on their type. Folders and Modules will have a `Members` section with an index of their contained items. All project items' sections are rendered in the following order:
 1. `!About` note
 1. `!Warnings` note
 1. `!License` note
@@ -59,12 +59,12 @@ Xojo2Markdown will render project items based on their type. Folders and Modules
 1. Shared Methods
 1. Properties (regular or computed)
 1. Shared Properties (regular or computed)
-1. `!Notes` section
-1. `!Examples` section
+1. `!Notes` note
+1. `!Examples` note
 1. All other rendered notes (IE: `!Changelog`)
 
 ## Table Formats
-Tables for object members are statically rendered.
+Tables for object members are statically sorted and rendered.
 
 ### Framework API Version
 | 1.0 | 2.0 |
