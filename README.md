@@ -14,6 +14,7 @@ The first argument should always be the path to the `xojo_project` you wish to r
 | `--replace` | Boolean | During the rendering process, if the output path exists, it will be removed and the new structure will be built in its place. | `--replace` |
 | `--in` | Project path to the Xojo project item(s). | Explicitly includes project items in output. | `--in=Classes/Windows/*;Classes/ProjectReader/ImportThread` |
 | `--ex` | Project path to a Xojo project item(s). | Explicitly excludes project items from output. |  `--ex=Classes/Windows/testWindows/*;Classes/ProjectWriter/ExportThread` |
+| `--index` | Boolean | Will automatically create empty `index.html` files within the directory structure for access via web server without revealing directory indexes. |
 
 ## Inclusion Model
 Xojo2Markdown uses an explicit inclusion model. All project items are excluded by default, and only those project items specified by an `--in` flag are included. Project items and members with the `Hidden`, `Deprecated` and `DeprecatedWithReplacement` attributes are *always* ignored.
@@ -22,6 +23,52 @@ Xojo2Markdown uses an explicit inclusion model. All project items are excluded b
 - All paths supplied to `--in` and `--ex` should be relative to the project's root as seen in the Xojo IDE navigator.
 - Both flags support wildcards (`*`) as the final path element, allowing the inclusion or exclusion of all project items within, for example, a single folder or module.
 - Multiple paths should be separated by a semicolon (`;`).
+
+## Method and Property Headers
+Supports Method and Property headers via a JSDoc-like syntax for generating extended documentation within these output sections.
+- Supports segment values spanning multiple lines for long descriptions and/or code blocks in examples.
+- The documentation header should always be the first non-empty line; beginning with `//**` and ending with `//**`. All lines between the starting and ending documentation header tokens should begin with a single `'` comment character.
+- The lines between the documentation header opening token and the first `@` token will be used as the description for the documentation entry.
+- Paramters are defined as `@ParameterName Description`.
+- Examples are defined as `@Example Name <EOL> Content`.
+- Examples can contain raw markdown, such as code wrapped in triple-backticks for markdown code display.
+- Return values are defined as `@return Description`
+
+### Example Method
+```
+Public Sub DoSomething(param1 As String, param2 As String) As Boolean
+  //**
+  ' Tries to do something and returns a boolean
+  '   denoting success.
+  '
+  '  Doesn't always work, but should...theoretically.
+  ' @example How to do something
+  ' This example will conditionally try to do something or something else.
+  ' ```
+  ' If DoSomething() then
+  '   MessageBox("We did something!")
+  ' Else
+  '   MessageBox("We failed to do something!")
+  ' End
+  ' ```
+  ' @param param1 The first parameter.
+  ' @param param2 The second parameter.
+  ' @return A boolean denoting whether the operation was
+  '   successful.
+  //**
+
+  if param1.IsEmpty or param2.IsEmpty then Return False
+
+  if param1 = "Test" and param2 = "Something" then
+    reeturn doSomethingElse()
+  else
+    return doAnotherThing()
+  end if
+End Sub
+```
+
+### Properties
+Documentation headers can be entered in the center code pane of the IDE when a Property or Computed Property is selected.
 
 ## Notes Rendering
 ### Creation
