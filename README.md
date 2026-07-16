@@ -14,7 +14,7 @@ The first argument should always be the path to the `xojo_project` you wish to r
 | `--replace` | Boolean | During the rendering process, if the output path exists, it will be removed and the new structure will be built in its place. | `--replace` |
 | `--in` | Project path to the Xojo project item(s). | Explicitly includes project items in output. | `--in=Classes/Windows/*;Classes/ProjectReader/ImportThread` |
 | `--ex` | Project path to a Xojo project item(s). | Explicitly excludes project items from output. |  `--ex=Classes/Windows/testWindows/*;Classes/ProjectWriter/ExportThread` |
-| `--index` | Boolean | Will automatically create empty `index.html` files within the directory structure for access via web server without revealing directory indexes. |
+| `--index` | Boolean | Will automatically create empty `index.html` files within the directory structure for access via web server without revealing directory indexes. | `--index` |
 
 ## Inclusion Model
 Xojo2Markdown uses an explicit inclusion model. All project items are excluded by default, and only those project items specified by an `--in` flag are included. Project items and members with the `Hidden`, `Deprecated` and `DeprecatedWithReplacement` attributes are *always* ignored.
