@@ -6,9 +6,9 @@ Xojo2Markdown is a console application that can read your `xojo_project` files a
 ## Example Usage
 ```
 ./xojo2markdown "/path/to/project/myApp.xojo_project" --out="/path/to/project/docs"
---in="ClassesToDocument/*;WindowsToDocument/*;ThingsToNotDocument/classDocumentThis"
---ex="ClassesToDocument/classDontDocument" 
---replace --index
+    --in="ClassesToDocument/*;WindowsToDocument/*;ThingsToNotDocument/classDocumentThis"
+    --ex="ClassesToDocument/classDontDocument" 
+    --replace --index
 ```
 
 ## Runtime Arguments
